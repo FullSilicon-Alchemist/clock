@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock using html,css and javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="clock">
+            <div>
+                <h2 class="digits">12</h2>
+                <h2 class="digits">3</h2>
+                <h2 class="digits">6</h2>
+                <h2 class="digits">9</h2>
+            </div>
+            <div class="circle"></div>
+            <div class="needles">
+                <div class="hr_needle" id="hr_needle"></div>
+                <div class="min_needle" id="min_needle"></div>
+                <div class="sec_needle" id="sec_needle"></div>
+            </div>
+        </div>
+        <div class="digital_clock">
+            <h2 class="digital_digits" id="hr">00 :</h2>
+            <h2 class="digital_digits" id="min">00 :</h2>
+            <h2 class="digital_digits" id="sec">00</h2>
+            <h2 class="digital_digits" id="day">Mon</h2>
+        </div>
+    </div>
+    <script src="js/analog.js"></script>
+    <script src="js/digital.js"></script>
+</body>
+</html>

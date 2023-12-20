@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(20, 134, 180);
+}
+
+#container{
+    margin: 15% 0% 0% 38%;
+    text-align: center;
+}
+.clock{
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid rgb(232, 170, 170);
+    border-radius: 50%;
+    background: rgb(119, 19, 84);
+    position: relative;
+    z-index: 1;
+}
+.digits{
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.digits:nth-child(1){
+    left: 45%;
+}
+.digits:nth-child(2){
+    left: 90%;
+    top: 45%;
+}
+.digits:nth-child(3){
+    left: 47%;
+    top: 88%;
+}
+.digits:nth-child(4){
+    top: 45%;
+    left: 3%;
+}
+.circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 47%;
+    left: 45%;
+    z-index: 15;
+}
+.hr_needle{
+    width: 5px;
+    height: 6rem;
+    background-color: #000;
+    position: absolute;
+    top: 22%;
+    left:50%;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+}
+.min_needle{
+    width: 5px;
+    height: 8rem;
+    background-color: #000;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+}
+.sec_needle{
+    width: 5px;
+    height: 8rem;
+    background-color: red;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    z-index: 10;
+}
+.digital_clock{
+    margin: 5% 40% 0% 0%;
+}
+.digital_digits{
+    font-size: 3rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    word-spacing: 2px;
+}
+.digital_digits:nth-child(4){
+    font-size: 1.5rem;
+}
